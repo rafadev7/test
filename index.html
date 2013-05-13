@@ -4,15 +4,20 @@ title: Comunidade Brasileira de NodeJS - NodeBR
 group: home
 ---
 {% for post in paginator.posts %}
-  <section  class="post">
+  <div class="post">
+  <section>
     <h1 class="page-header"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-    <article class="content">
+    <div class="content">
+    <article>
       {{ post.content }}
     </article>
-  </section >
+    </div>
+  </section>
+  </div>
 {% endfor %}
 
-<nav  class="pagination">
+<div  class="pagination">
+<nav>
   <ul class="pages">
     {% assign base_paginator = site.paginate_path | remove:':num' %}
     {% if paginator.previous_page %}
@@ -55,3 +60,4 @@ group: home
     {% endif %}
   </ul>
 </nav>
+</div>

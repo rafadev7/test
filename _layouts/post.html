@@ -4,14 +4,19 @@ layout: default
 <div class="container">
   <div class="row">
     <div class="span9">
-      <section class="post">
+      <div class="post">
+      <section>
         <h1 class="page-header">{{ page.title }}</h1>
-        <article class="content">
+        <div class="content">
+        <article>
           {{ content }}
         </article>
+        </div>
       </section>
+      </div>
 
-      <nav class="pagination">
+      <div class="pagination">
+      <nav>
         <ul>
           {% if page.next %}
             <li class="next"><a href="{{ page.next.url }}" title="{{ page.next.title }}">&larr; Anterior</a></li>
@@ -26,13 +31,15 @@ layout: default
           {% endif %}
         </ul>
       </nav>
+      </div>
       
       {% include comments.html %}
       
     </div>
 
 
-    <aside class="span3 sidebar">
+    <div class="span3 sidebar">
+    <aside>
       <h4>Publicado.</h4>
       <div class="date"><span>{{ page.date | date: " %e de %B de %Y" | replace: 'January', 'Janeiro' | replace: 'February', 'Fevereiro' | replace: 'March', 'Março' | replace: 'April', 'Abril' | replace: 'May', 'Maio' | replace: 'June', 'Junho' | replace: 'July', 'Julho' | replace: 'August', 'Agosto' | replace: 'September', 'Setembro' | replace: 'October', 'Outubro' | replace: 'November', 'Novembro' | replace: 'December', 'Dezembro' }}</span></div>
       {% unless page.tags == nil or page.tags == empty %}
@@ -62,5 +69,6 @@ layout: default
         </ul>
       {% endif %}
     </aside>
+    </div>
   </div>
 </div>

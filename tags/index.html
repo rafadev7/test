@@ -3,9 +3,11 @@ layout: page
 title: Tags
 group: nav
 ---
-<section  class="post">
+<div class="post">
+<section>
   <h1 class="page-header">{{ page.title }}</h1>
-  <article class="content">
+  <div class="content">
+  <article>
     <ul class="tag_box inline">
       {% for tag in site.tags %} 
         <li><a href="{{ site.tags_path }}#{{ tag[0] }}">{{ tag[0] }} <span>{{ tag[1].size }}</span></a></li>
@@ -21,7 +23,9 @@ group: nav
       </ul>
     {% endfor %}
   </article>
+  </div>
 </section>
+</div>
 
   
   

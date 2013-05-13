@@ -3,9 +3,11 @@ layout: page
 title: Mapa
 group: nav
 ---
-<section  class="post">
+<div class="post">
+<section>
   <h1 class="page-header">{{ page.title }}</h1>
-  <article class="content">
+  <div class="content">
+  <article>
     <ul>
       <li><a href="{{ site.baseurl }}">Home</a></li>
       {% for node in site.pages %}
@@ -18,4 +20,6 @@ group: nav
       {% endunless %}
     </ul>
   </article>
+  </div>
 </section>
+</div>

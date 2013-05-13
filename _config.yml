@@ -1,8 +1,8 @@
-title : NodeBR
+title : TestesDeLayout
 timezone: America/Sao_Paulo
 
-url: http://nodebr.com
-baseurl: /
+url: http://rafadev7.github.io
+baseurl: test/
 permalink: /:categories/:title/
 tags_path: /tags/
 archive_path: /arquivo/
